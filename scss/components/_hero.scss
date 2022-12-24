@@ -1,0 +1,177 @@
+.hero{
+    overflow: hidden;
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 100%;
+    @media screen and (min-width: 360px) {
+        background-image: url(../../images/mobile/bg-1.png);
+        height: 734px;
+        position: relative;
+        }
+    
+        @media screen and (min-width: 1110px) { 
+                background-image: url(../../images/desktop/hero-desktop.png);
+                height: 948px;
+                text-align: center;
+                
+        }
+   
+}
+
+.hero__blok {
+    @media screen and (min-width: 360px){
+        // width: 305px;
+        padding-top: 10px;
+       
+    }
+
+    @media screen and (min-width: 1110px){
+    width: 640px;
+    text-align: start;       
+        }
+}
+
+.hero__logo{
+    display: block;
+    @media screen and (min-width: 360px){
+width: 96px;
+    height: 72px;
+    padding-top: 20px;
+
+    }
+     @media screen and (min-width: 1110px){
+    height: 85px;
+     
+        }
+    
+}
+
+.hero__logo-text{
+    font-family: 'PT Serif';
+color: var(--text-color);
+@media screen and (min-width: 360px){
+font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 10px;
+}
+    @media screen and (min-width: 1110px){
+font-size: 48px;
+        line-height: 1.33;
+        margin-bottom: 0px;
+        margin-left: 20px;
+    }
+        
+}
+
+.hero__title{
+    font-family: 'Playfair Display', sans-serif;
+    color: var(--text-color);
+
+    @media screen and (min-width: 360px){
+    font-weight: 400;
+      font-size: 64px;
+    line-height: 85px;  
+    margin-bottom: 0px;
+
+    }
+
+    @media screen and (min-width: 1110px){
+    font-size: 144px;
+    line-height: 1.33;
+    margin-bottom: -20px;
+         }
+        
+}
+
+.hero__second-title{
+    font-family: 'Playfair Display';
+    color: var(--text-color);
+    @media screen and (min-width: 360px) {
+font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 15px;
+    }
+
+    @media screen and (min-width: 1110px){
+    font-size: 72px;
+    line-height: 1.33;
+    margin-bottom: 12px;
+        }
+     
+}
+
+.hero__text{
+    display: block;
+    color: var(--text-color);
+@media screen and (min-width: 360px){
+    margin-bottom: 71px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        width: 305px;
+}
+
+@media screen and (min-width: 1110px){
+    font-size: 18px;
+    line-height: 1.16;
+    width: 500px; 
+}              
+}
+
+
+.button{
+border: none;
+@media screen and (min-width: 360px){
+padding: 15px 53px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 50px;
+}
+padding: 20px 61px;
+display: block;
+border-radius: 10px;
+font-size: 24px;
+line-height: 1.16;
+background-color: var(--hero-button-color);
+color: var(--text-color);
+color: var(--text-color);
+cursor: pointer;
+
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+&:hover,
+&:focus{
+    background-color: var(--text-color);
+    color: var(--hero-button-color);
+}
+}
+
+.hero__blok-img{
+    background-image: url(../../images/desktop/nike-desktop.png);
+        display: block;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 768px;
+   
+    @media screen and (min-width: 360px){
+    width: 510px;
+    margin-left: -100px;
+    margin-top: -320px;
+    }
+
+    @media screen and (min-width: 1110px){    
+        width: 840px;
+            margin-top: -400px;
+        
+            margin-left: 200px;
+        }  
+   
+}
+

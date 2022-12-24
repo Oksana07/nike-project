@@ -1,0 +1,40 @@
+/* Form */
+
+.backdrop-form {
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 120;
+    // background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgb(0 0 0 / 0.2);
+
+}
+
+.backdrop-form.is-hiddenForm {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.form {
+
+    background-image: url(../../images/modal-form.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 4px;
+    padding: 40px;
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    max-width: 1440px;
+    min-height: 1024px;
+
+}

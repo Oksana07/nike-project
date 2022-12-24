@@ -1,0 +1,69 @@
+.application {
+    padding-top: 55px;
+    padding-bottom: 80px;
+    max-width: 1440px;
+    height: 510px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    background-image: url(../../images/desktop/group-4-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.application_title{
+font-family: 'Playfair Display';
+font-size: 48px;
+line-height: 1.33;
+text-align: center;
+color: var(--text-color);
+}
+
+.application__form {
+    display:inline-block;
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+}
+
+.form-field {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+
+    transition: transform 250ms linear;
+}
+
+.form-input {
+    width: 100%;
+    margin: 0;
+    padding: 10px 20px;
+    padding-left: 40px;
+    font: inherit;
+    border-radius: 3px;
+    border: 1px solid #2a2a2a;
+}
+
+
+
+.form-field:focus-within {
+    background-color: blue;
+}
+
+.form-field:focus-within>.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+    transform: translateY(-50px);
+}
+
+.form--button{
+    display: inline-block;
+}

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Playfair+Display&family=Roboto:wght@300;400&family=Salsa&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css">
+    <title>ColoRawe</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a class="header_logo" href="">
+                    <img src="./images/desktop/logo-desktop.png" alt="logo">
+                </a>
+                <ul class="menu list">
+                    <li class="menu_item "><a class="menu_link" href="">Main page</a></li>
+                    <li class="menu_item"><a class="menu_link" href="">Benefits</a></li>
+                    <li class="menu_item"><a class="menu_link" href="">Advantages</a></li>
+                    <li class="menu_item"><a class="menu_link" href="">Reviews</a></li>
+                    <li class="menu_item"><a class="menu_link" href="">Contacts</a></li>
+                    <li class="menu_item"><a class="menu_link" href="">Order</a></li>
+                </ul>
+
+
+                <frames class="language">
+                    <samp class="language_ru">Ru</samp><samp class="language_en">En</samp>
+                </frames>
+
+
+            </nav>
+        </div>
+    </header>
+    <!-- menu mobile -->
+    <div class="mobile-menu" data-menu>
+        <ul class="menu-mobile list">
+            <li class="menu-mobile_item "><a class="menu_link menu--curren" href="">Main page</a></li>
+            <li class="menu-mobile_item"><a class="menu_link" href="">Benefits</a></li>
+            <li class="menu-mobile_item"><a class="menu_link" href="">Advantages</a></li>
+            <li class="menu-mobile_item"><a class="menu_link" href="">Reviews</a></li>
+            <li class="menu-mobile_item"><a class="menu_link" href="">Contacts</a></li>
+            <li class="menu-mobile_item"><a class="menu_link" href="">Order</a></li>
+        </ul>
+
+        <ul class="mobile-language list">
+            <li class="mobile-language_item"><a class="menu_link" href="">Ru</a></li>
+            <li class="mobile-language_item"><a class="menu_link menu--curren" href="">En</a></li>
+        </ul>
+    </div>
+    <main>
+
+        <hero class="hero">
+            <div class="container">
+                <!-- button-mobile menu -->
+                <button class="button-mobile " data-menu-button>
+                    <svg class="icon-mobile " aria-label="Переключатель меню">
+                        <use class="menu-icon" href="./images/icon/symbol-defs.svg#icon-burger"></use>
+                        <use class="menu-close" href="/images/icon/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+
+                <div class="hero__blok">
+                    <a class="hero__logo" href="">
+                        <img src="./images/desktop/logo-big-desktop.png" alt="">
+
+                    </a>
+                    <p class="hero__logo-text">С&R</p>
+                    <h1 class="hero__title">ColoRawe</h1>
+                    <h2 class="hero__second-title">Your dream Nike</h2>
+                    <p class="hero__text">On this site you can find custom Nike sneakers of your dreams.
+                        The original company caт`t create such beautiful
+                        sneakers as we do.
+                        Good luck finding your way in the world of custom sneakers.
+                    </p>
+
+                    <button type="button" class="button" data-modal-open>Buy my Nike</button>
+                </div>
+                <div class="hero__blok-img animate__animated animate__pulse">
+
+                </div>
+
+
+            </div>
+        </hero>
+
+        <section class="our-advantages">
+            <div class="container">
+                <ul class="our-advantages__list list">
+                    <li class="our-advantages__item">
+                        <img src="./images/star-desktop.png" alt="">
+                    </li>
+                    <li class="our-advantages__item">
+                        <img src="./images/paint2-desktop.png" alt="">
+
+                    </li>
+                    <li class="our-advantages__item">
+                        <img src="./images/shipping3-desktop.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- <section class="storage">
+            <div class="container">
+                <div class="storage__group">
+                    <p class="storage__group-text">Comfortable sole</p>
+                    <img class="storage__group-nike" src="./images/desktop/nike-botom-desktop.png" alt="">
+                    <img class="storage__group-vector" src="./images/vector-7-desktop.png" alt="">
+                    <img class="storage__group-mask" src="./images/mask-desktop.png" alt="">
+                </div>
+
+                <button class="storage__button">10% fabric 40% natural fabric 50% polyester</button>
+
+
+            </div>
+        </section> -->
+
+        <!-- <section class="echoes">
+            <div class="container">
+                <h2 class="echoes_title">Reviews</h2>
+                <ul class="echoes__list">
+                    <li class="echoes__item1 fon">
+                        <p class="echoes__text">Sneakers are very
+                            comfortable and well
+                            painted, nothing has
+                            worn off in a year.</p>
+                        <p class="echoes__time">25.11</p>
+                        <img src="./images/desktop/ellipse1-desktop.png" alt="">
+                        <h3 class="echoes__name">John Teylor</h3>
+                        <p class="echoes__deit">With us from 2018</p>
+                    </li>
+
+                    <li class="echoes__item2 fon">
+                        <p class="echoes__text">I'm very happy with this color scheme.
+                            They match all my clothes.</p>
+                        <p class="echoes__time">05.01</p>
+                        <img src="./images/desktop/ellipse2-desktop.png" alt="">
+                        <h3 class="echoes__name">Elizabeth Garsia</h3>
+                        <p class="echoes__deit">With us from 2020</p>
+                    </li>
+
+                    <li class="echoes__item3 fon">
+                        <p class="echoes__text">Just right if you need to go to a party.
+                            I use them actively, the paint is super.</p>
+                        <p class="echoes__time">18.06</p>
+                        <img src="./images/ellipse.png" alt="">
+                        <h3 class="echoes__name">Tom Maquare</h3>
+                        <p class="echoes__deit">With us from 2019</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section> -->
+
+        <!-- <section class="application">
+            <h2 class="application_title">Order</h2>
+            <form class="application__form" autocomplete="off">
+                <label class="form-field">
+                    <input type="email" class="form-input" name="mail" placeholder=" " />
+                    <span class="form-label ">І'мя</span>
+                </label>
+
+                <label class="form-field">
+                    <input type="email" class="form-input" name="mail" placeholder=" " />
+                    <span class="form-label">Пошта</span>
+
+                </label>
+
+                <label class="form-field">
+                    <input type="email" class="form-input" name="mail" placeholder=" " />
+                    <span class="form-label">Пошта</span>
+                </label>
+
+                <button type="button" class="button form--button" data-form-open>Order my Nike</button>
+            </form>
+
+
+
+        </section> -->
+
+        <!-- <footer class="footer">
+            <div class="container">
+                <div class="footer-container1">
+                    <ul class="footer-list list">
+                        <li class="footer-item">Have a question?</li>
+                        <li class="footer-item">Have a proposal for cooperation?</li>
+                        <li class="footer-item">Advertising questions?</li>
+                    </ul>
+                    <ul class="footer-list list">
+                        <li class="footer-item">ColoRawe_support@gmail.com</li>
+                        <li class="footer-item">ColoRawe_Cooperation</li>
+                        <li class="footer-item">ColoRawe_Advertising@gmail.com</li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-container2">
+                    <ul class="footer-list list">
+                        <li class="footer-list__rights-reserved">2022 ColoRawe &#x40;All rights reserved</li>
+                        <li class="footer-list__country">United States</li>
+                    </ul>
+                    <div>
+                        <a class="footer_logo" href="./desktop1.html">
+                            <img src="./images/desktop/logo-desktop.png" alt="logo">
+                        </a>
+                        <p class="footer__logo-text">С&R</p>
+                    </div>
+
+
+                </div>
+            </div>
+        </footer> -->
+        <!-- modal -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <div class="blok-modal">
+                    <div>
+                        <div class="modal-visa">
+                            <h2 class="modal-title">Payment card</h2>
+                            <div class="blok-form">
+                                <div>
+                                    <form class="visa-form">
+                                        <label>
+                                            <p class="text-form">Card number</p>
+                                            <input type="number" class="visa-form__number" name="number"
+                                                placeholder="1111 1111 1111 1111" />
+                                        </label>
+
+                                        <label>
+                                            <p class="text-form">Date of ending</p>
+                                            <input name="mail" class="visa-form__date" placeholder=" 01/01" name="date">
+                                        </label>
+
+                                        <label>
+                                            <p class="text-form">Secret code</p>
+                                            <input class="visa-form__date" name="code" placeholder="001" />
+                                        </label>
+                                    </form>
+                                </div>
+
+                                <div class="master-visa">
+                                    <img class="master" src="./images/desktop/master-desktop.png" alt="">
+                                    <img class="visa" src="./images/desktop/visa@2x-desktop.png" alt="">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="checkbox-label">
+                                    <input class="checkbox-input" type="checkbox" name="topic" value="js" />
+                                    <span class="checkbox-icon"></span>
+                                    <span class="checkbox-text">Remember data</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="modal-form">
+                            <h3 class="title-form">Final Order</h3>
+                            <form class="final-order">
+                                <input class="final-order__inpur" name="first name and last name"
+                                    placeholder="Write your first name and last name ">
+                                <input class="final-order__inpur" name="size" placeholder="Write your foot size ">
+                            </form>
+                            <img class="nike-form" src="./images/nike-form.png" alt="">
+                            <p class="nike-form__price">299$</p>
+                            <button type="submit" class="button button--form" data-modal-close>
+                                Buy my Nike
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal__logo">
+                    <a href="">
+                        <img class="modal__logo" src="./images/desktop/logo-big-desktop.png" alt="">
+
+                    </a>
+                    <p class="modal__logo-text">С&R</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- form -->
+        <!-- <div class="backdrop-form is-hiddenForm" data-form>
+            <div class="form">
+                <a class="hero__logo" href="">
+                    <img src="./images/desktop/logo-big-desktop.png" alt="">
+
+                </a>
+                <p class="hero__logo-text">С&R</p>
+
+                <button type="submit" class="button" data-form-close>
+                    Back to main page
+                </button>
+
+            </div>
+        </div> -->
+    </main>
+    <script src="./js/mobile.js" type="module"></script>
+    <script src="./js/modal.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+
+</body>
+
+</html>

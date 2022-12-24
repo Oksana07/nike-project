@@ -888,6 +888,11 @@ body {
 .footer {
   background-color: #021635;
 }
+@media screen and (min-width: 360px) {
+  .footer {
+    height: 388px;
+  }
+}
 @media screen and (min-width: 1110px) {
   .footer {
     padding-top: 45px;
@@ -910,16 +915,33 @@ body {
   }
 }
 
-.footer-container2 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
+@media screen and (min-width: 360px) {
+  .footer-container2 {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-container2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
 }
 
 .footer-list {
-  font-size: 24px;
-  line-height: 28px;
   color: #FFFFFF;
+}
+@media screen and (min-width: 360px) {
+  .footer-list {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-list {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
 
 .footer-item {

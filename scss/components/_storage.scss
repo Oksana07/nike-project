@@ -1,4 +1,12 @@
 .storage{
+    @media screen and (min-width: 360px) {
+background-image: url(../../images/mobile/fl2-bg-3.png) ,url(../../images/mobile/fl-bg-3.png),url(../../images/mobile/bg-3.png);
+background-repeat: no-repeat;
+    background-position: bottom 0px left 0px, bottom 0px right 0px,center;
+    background-size: 96px, 140px, cover;
+height: 360px;
+    }
+        @media screen and (min-width: 1110px) {
     padding-top: 63px;
     padding-bottom: 82px;
     // max-width: 1440px;
@@ -12,7 +20,7 @@
     background-position: center;
     background-size: cover;
 }
-
+}
 .storage__group{
     position: relative;
 }
@@ -20,47 +28,95 @@
 .storage__group-text{
 
 position: absolute;
-margin-left: 860px;
-margin-top: -10px;
 font-family: 'Playfair Display';
+color: var(--text-color);
+@media screen and (min-width: 360px){
+    font-size: 14px;
+        line-height: 19px;
+        margin-left: 60px;
+        margin-top: 250px;
+}
+@media screen and (min-width: 1110px){
+margin-left: 850px;
+margin-top: -10px;
 font-size: 28px;
 line-height: 37px;
-color: var(--text-color);
+}
+
 }
 
 .storage__group-vector{
 position: absolute;
-margin-top: -370px;  
-margin-left: 700px;
+@media screen and (min-width: 360px) {
+height: 145px;
+    transform: rotate(180deg);
+    margin-left: 60px;
+    margin-top: -20px;
+    margin-right: 20px;
+    width: 185px;
+}
+@media screen and (min-width: 1110px) {
+transform: rotate(-1deg);
+width: 403px;
+height: 183px;
+margin-top: -370px;
+margin-left: 680px;
+}
+
 }
 
 .storage__group-mask{
 position: absolute;
-margin-left: 600px;
-margin-top: -200px;
 border: 1px solid white;
 border-radius: 50%;
+@media screen and (min-width: 360px){
+    width: 45px;
+margin-left: 228px;
+    margin-top: -68px;
+    margin-top: -60px;
+}
+@media screen and (min-width: 1110px) {
+    width: 130px;
+margin-left: 600px;
+    margin-top: -200px;
+}
+
+
 }
 
 .storage__button {
-   z-index: 1;
+    z-index: 1;
+    background: linear-gradient(91.33deg, #8E32C6 15.44%, #D600C0 69.67%);
+    
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        color: #FFFFFF;
+    
+        position: relative;
+    @media screen and (min-width: 360px){
+width: 305px;
+font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 11px 6px;
+    margin-top: 150px;
+    }
+        @media screen and (min-width: 1110px){
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
     line-height: 33px;
-    color: #FFFFFF;
+    width: 715px;
 
     padding: 26px 64px;
     margin-right: 220px;
+    margin-top: 10px;
 
-    background: linear-gradient(91.33deg, #8E32C6 15.44%, #D600C0 69.67%);
-    
-    border: none;
-    border-radius: 15px;
-    cursor: pointer;
-
-    position: relative;
+   
+        }
    
 &::before,
 &::after {

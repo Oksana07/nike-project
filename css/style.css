@@ -486,18 +486,29 @@ body {
   margin-right: 0px;
 }
 
-.storage {
-  padding-top: 63px;
-  padding-bottom: 82px;
-  height: 606px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  display: block;
-  background-image: url(../../images/desktop/group-2-desktop.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+@media screen and (min-width: 360px) {
+  .storage {
+    background-image: url(../../images/mobile/fl2-bg-3.png), url(../../images/mobile/fl-bg-3.png), url(../../images/mobile/bg-3.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px left 0px, bottom 0px right 0px, center;
+    background-size: 96px, 140px, cover;
+    height: 360px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .storage {
+    padding-top: 63px;
+    padding-bottom: 82px;
+    height: 606px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    background-image: url(../../images/desktop/group-2-desktop.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .storage__group {
@@ -506,43 +517,101 @@ body {
 
 .storage__group-text {
   position: absolute;
-  margin-left: 860px;
-  margin-top: -10px;
   font-family: "Playfair Display";
-  font-size: 28px;
-  line-height: 37px;
   color: var(--text-color);
+}
+@media screen and (min-width: 360px) {
+  .storage__group-text {
+    font-size: 14px;
+    line-height: 19px;
+    margin-left: 60px;
+    margin-top: 250px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .storage__group-text {
+    margin-left: 850px;
+    margin-top: -10px;
+    font-size: 28px;
+    line-height: 37px;
+  }
 }
 
 .storage__group-vector {
   position: absolute;
-  margin-top: -370px;
-  margin-left: 700px;
+}
+@media screen and (min-width: 360px) {
+  .storage__group-vector {
+    height: 145px;
+    transform: rotate(180deg);
+    margin-left: 60px;
+    margin-top: -20px;
+    margin-right: 20px;
+    width: 185px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .storage__group-vector {
+    transform: rotate(-1deg);
+    width: 403px;
+    height: 183px;
+    margin-top: -370px;
+    margin-left: 680px;
+  }
 }
 
 .storage__group-mask {
   position: absolute;
-  margin-left: 600px;
-  margin-top: -200px;
   border: 1px solid white;
   border-radius: 50%;
+}
+@media screen and (min-width: 360px) {
+  .storage__group-mask {
+    width: 45px;
+    margin-left: 228px;
+    margin-top: -68px;
+    margin-top: -60px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .storage__group-mask {
+    width: 130px;
+    margin-left: 600px;
+    margin-top: -200px;
+  }
 }
 
 .storage__button {
   z-index: 1;
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 33px;
-  color: #FFFFFF;
-  padding: 26px 64px;
-  margin-right: 220px;
   background: linear-gradient(91.33deg, #8E32C6 15.44%, #D600C0 69.67%);
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  color: #FFFFFF;
   position: relative;
+}
+@media screen and (min-width: 360px) {
+  .storage__button {
+    width: 305px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 11px 6px;
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .storage__button {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 33px;
+    width: 715px;
+    padding: 26px 64px;
+    margin-right: 220px;
+    margin-top: 10px;
+  }
 }
 .storage__button::before, .storage__button::after {
   content: "";
@@ -817,17 +886,28 @@ body {
 }
 
 .footer {
-  padding-top: 45px;
-  padding-bottom: 50px;
   background-color: #021635;
-  height: 292px;
+}
+@media screen and (min-width: 1110px) {
+  .footer {
+    padding-top: 45px;
+    padding-bottom: 50px;
+    height: 292px;
+  }
 }
 
-.footer-container1 {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #5E5E5E;
+@media screen and (min-width: 360px) {
+  .footer-container1 {
+    display: inline;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-container1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5E5E5E;
+  }
 }
 
 .footer-container2 {

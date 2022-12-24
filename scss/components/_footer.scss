@@ -1,16 +1,27 @@
 .footer{
-    padding-top: 45px;
-    padding-bottom: 50px;
     background-color: #021635;
-    height: 292px;
+    @media screen and (min-width: 360px) {}
+        @media screen and (min-width: 1110px) {
+            padding-top: 45px;
+                padding-bottom: 50px;
+            
+                height: 292px;
+        }
+    
 
 }
 
 .footer-container1{
+@media screen and (min-width: 360px){
+display: inline;
+}
+@media screen and (min-width: 1110px) {
 display: flex;
-justify-content: space-between;
-margin-bottom: 20px;
-border-bottom: 1px solid #5E5E5E;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #5E5E5E;
+}
+
 
 }
 

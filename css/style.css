@@ -891,6 +891,7 @@ body {
 @media screen and (min-width: 360px) {
   .footer {
     height: 388px;
+    padding: 10px 21px 29px 28px;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -903,7 +904,8 @@ body {
 
 @media screen and (min-width: 360px) {
   .footer-container1 {
-    display: inline;
+    border-bottom: 1px solid #5E5E5E;
+    display: block;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -917,7 +919,7 @@ body {
 
 @media screen and (min-width: 360px) {
   .footer-container2 {
-    display: inline;
+    display: flex;
   }
 }
 @media screen and (min-width: 1110px) {
@@ -944,15 +946,63 @@ body {
   }
 }
 
+@media screen and (min-width: 360px) {
+  .footer-email {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-email {
+    margin-left: auto;
+  }
+}
+
 .footer-item {
   margin-bottom: 10px;
 }
 
-.footer-list__rights-reserved {
-  font-size: 18px;
-  line-height: 21px;
-  /* identical to box height */
+.footer-email__item {
+  margin-bottom: 10px;
+}
+
+.footer-email__link {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  text-decoration-line: underline;
   color: #FFFFFF;
+}
+@media screen and (min-width: 360px) {
+  .footer-email__link {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-email__link {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+.footer-list__rights-reserved {
+  color: #FFFFFF;
+}
+@media screen and (min-width: 360px) {
+  .footer-list__rights-reserved {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer-list__rights-reserved {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 .footer-list__country {
@@ -967,6 +1017,17 @@ body {
 
 .footer_logo {
   display: block;
+}
+@media screen and (min-width: 360px) {
+  .footer_logo {
+    width: 65px;
+  }
+}
+@media screen and (min-width: 1110px) {
+  .footer_logo {
+    margin-top: -10px;
+    width: 108px;
+  }
 }
 
 .footer__logo-text {

@@ -2,6 +2,7 @@
     background-color: #021635;
     @media screen and (min-width: 360px) {
         height: 388px;
+        padding: 10px 21px 29px 28px;
     }
     @media screen and (min-width: 1110px) {
          padding-top: 45px;
@@ -13,14 +14,17 @@
 }
 
 .footer-container1{
-@media screen and (min-width: 360px){
-display: inline;
+    
+    @media screen and (min-width: 360px){
+        border-bottom: 1px solid #5E5E5E;
+display: block;
 }
 @media screen and (min-width: 1110px) {
 display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
     border-bottom: 1px solid #5E5E5E;
+    
 }
 
 
@@ -29,15 +33,13 @@ display: flex;
 .footer-container2 {
     
     @media screen and (min-width: 360px) {
-            display: inline;
+            display: flex;
         }
      @media screen and (min-width: 1110px) {
         display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
                 }
-    
-  
 
 }
 
@@ -51,29 +53,57 @@ font-size: 14px;
     font-size: 24px;
         line-height: 28px;
         }
-
-
-
-    
+   
 }
 
-
+.footer-email{
+    @media screen and (min-width: 360px){
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+    align-items: center;
+    }
+         @media screen and (min-width: 1110px){
+margin-left: auto;
+         }
+}
 
 .footer-item{
 margin-bottom: 10px;
 }
 
-
+.footer-email__item{
+margin-bottom: 10px;
+}
+.footer-email__link{
+    
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        text-decoration-line: underline;
+        color: #FFFFFF;
+@media screen and (min-width: 360px){
+font-size: 14px;
+    line-height: 16px
+}
+@media screen and (min-width: 1110px){
+font-size: 24px;
+    line-height: 28px;
+}        
+}
 
 
 .footer-list__rights-reserved{
-
-    font-size: 18px;
+color: #FFFFFF;
+    @media screen and (min-width: 360px){
+font-size: 14px;
+    line-height: 16px;
+    }
+ @media screen and (min-width: 1110px){
+font-size: 18px;
     line-height: 21px;
-    /* identical to box height */
-
-
-    color: #FFFFFF;
+ }
   
 }
 
@@ -91,8 +121,16 @@ font-family: 'Roboto';
 
 
 .footer_logo{
-display: block;
+    display: block;
+        @media screen and (min-width: 360px) {
+            width: 65px;
+
+        }
+    @media screen and (min-width: 1110px) {
+        margin-top: -10px;
+        width: 108px;
 }
+        }
 
 .footer__logo-text{
 display: block;
@@ -104,3 +142,4 @@ display: block;
     color: #fff;
     margin-left: 10px;
 }
+

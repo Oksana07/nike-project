@@ -16,8 +16,9 @@
 .footer-container1{
     
     @media screen and (min-width: 360px){
+        margin-bottom: 12px;
         border-bottom: 1px solid #5E5E5E;
-display: block;
+        display: block;
 }
 @media screen and (min-width: 1110px) {
 display: flex;
@@ -137,9 +138,21 @@ display: block;
     font-family: "PT Serif";
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
     color: #fff;
+    @media screen and (min-width: 360px){
+        margin-left: 10px;
+font-size: 14px;
+    line-height: 19px;
+    }
+    
+ @media screen and (min-width: 1110px){
+font-size: 24px;
+    line-height: 32px;
     margin-left: 10px;
+ }
+
+
+
+    
 }
 

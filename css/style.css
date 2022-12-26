@@ -888,12 +888,6 @@ body {
 .footer {
   background-color: #021635;
 }
-@media screen and (min-width: 360px) {
-  .footer {
-    height: 388px;
-    padding: 10px 21px 29px 28px;
-  }
-}
 @media screen and (min-width: 1110px) {
   .footer {
     padding-top: 45px;

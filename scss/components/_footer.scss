@@ -7,15 +7,16 @@
     @media screen and (min-width: 1110px) {
          padding-top: 45px;
         padding-bottom: 50px;
-        height: 292px;
-        }
+        // height: 292px;
+        
     
-
+    }
 }
 
 .footer-container1{
     
     @media screen and (min-width: 360px){
+        padding-top: 10px;
         margin-bottom: 12px;
         border-bottom: 1px solid #5E5E5E;
         display: block;
@@ -112,12 +113,17 @@ font-size: 18px;
 font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    /* identical to box height */
-
-
     color: #FFFFFF;
+@media screen and (min-width: 360px){
+margin-top: 12px;
+    font-size: 14px;
+    line-height: 16px;
+}
+ @media screen and (min-width: 1110px){
+font-size: 18px;
+    line-height: 21px;
+ }
+   
 }
 
 
@@ -125,6 +131,7 @@ font-family: 'Roboto';
     display: block;
         @media screen and (min-width: 360px) {
             width: 65px;
+            margin-left: 20px;
 
         }
     @media screen and (min-width: 1110px) {
@@ -140,7 +147,7 @@ display: block;
     font-weight: 400;
     color: #fff;
     @media screen and (min-width: 360px){
-        margin-left: 10px;
+        margin-left: 30px;
 font-size: 14px;
     line-height: 19px;
     }
@@ -148,11 +155,7 @@ font-size: 14px;
  @media screen and (min-width: 1110px){
 font-size: 24px;
     line-height: 32px;
-    margin-left: 10px;
- }
-
-
-
-    
+    // margin-left: 10px;
+ }  
 }
 

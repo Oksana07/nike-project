@@ -2,14 +2,14 @@
     @media screen and (min-width: 360px) {
 background-image: url(../../images/mobile/fl2-bg-3.png) ,url(../../images/mobile/fl-bg-3.png),url(../../images/mobile/bg-3.png);
 background-repeat: no-repeat;
-    background-position: bottom 0px left 0px, bottom 0px right 0px,center;
-    background-size: 96px, 140px, cover;
-height: 360px;
+background-position: bottom 0px left 0px, bottom 0px right 0px,center;
+background-size: 96px, 140px, cover;
+padding-top: 20px;
+padding-bottom: 20px;
     }
         @media screen and (min-width: 1110px) {
     padding-top: 63px;
     padding-bottom: 82px;
-    // max-width: 1440px;
     height: 606px;
     margin-left: auto;
     margin-right: auto;
@@ -33,8 +33,8 @@ color: var(--text-color);
 @media screen and (min-width: 360px){
     font-size: 14px;
         line-height: 19px;
-        margin-left: 60px;
-        margin-top: 250px;
+        margin-left: 65px;
+        margin-top: 240px;
 }
 @media screen and (min-width: 1110px){
 margin-left: 850px;

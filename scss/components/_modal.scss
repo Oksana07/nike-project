@@ -20,23 +20,32 @@
 }
 
 .modal {
-    background-image:url(../../images/desktop/flower-desktop.png),url(../../images/desktop/group5-desktop.png);
-    background-repeat: no-repeat;
-    background-position: bottom 0px left 0px, center;
-    background-size: 355px, cover;
-    border-radius: 4px;
-    padding: 40px;
-
-
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    max-width: 1440px;
-    min-height: 1024px;
-    display: flex;
-    justify-content: space-between;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        @media screen and (min-width: 360px) {
+background-image: url(../../images/mobile/fl-desk3.png), url(../../images/mobile/fl-2-desk3.png), url(../../images/mobile/bg-desktop2.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px left 0px, bottom 0px right 0px,center;
+    background-size: 166px, 182px, cover;
+    padding: 46px 27px;
+    max-height: 738px;
+        }
+        @media screen and (min-width: 1110px) {
+            background-image: url(../../images/desktop/flower-desktop.png), url(../../images/desktop/group5-desktop.png);
+                background-repeat: no-repeat;
+                background-position: bottom 0px left 0px, center;
+                background-size: 355px, cover;
+                border-radius: 4px;
+                padding: 40px;
+            
+                // max-width: 1440px;
+                min-height: 1024px;
+                display: flex;
+                justify-content: space-between;
+        }
 
 }
 
@@ -45,57 +54,103 @@
     position: relative;
     display: flex;
     display: block;
-    margin-left: 167px;
+    background: rgba(168, 168, 168, 0.26);
+    @media screen and (min-width: 360px){
+padding-left: 10px;
+   padding-right: 14px;
+   padding-bottom: 12px;
+    width: 305px;
+    }
 
+    @media screen and (min-width: 1110px){
+    margin-left: 167px;
     margin-top: 100px;
     margin-bottom: 25px;
-
     width: 575px;
-    // height: 280px;
-    background: rgba(168, 168, 168, 0.26);
+    
+    }
+    
+    
 }
 
 .modal-title{
-    text-align: center;
-  padding-top: 15px;
 font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 33px;
-
-    color: #FFFFFF;
-       
+font-style: normal;
+font-weight: 400;
+color: #FFFFFF;
+text-align: center;
+@media screen and (min-width: 360px) {
+padding-top: 13px;
+font-size: 14px;
+line-height: 16px;
+    }
+@media screen and (min-width: 1110px){
+padding-top: 15px;
+font-size: 28px;
+line-height: 33px;
+    }      
 }
 
 .blok-form {
+    @media screen and (min-width: 360px) {
+      display: inline;
+      position: relative;
+        }
+    
+        @media screen and (min-width: 1110px){
     display: flex;
+        justify-content: space-between;
+        }
+   
 }
 
 .visa-form {
-    margin-right: 65px;
+@media screen and (min-width: 360px) {
+padding-bottom: 0px;
+}
+        
+@media screen and (min-width: 1110px){
+margin-right: 65px;
     padding-left: 27px;
     padding-bottom: 22px;
-
+}
+    
 }
 
 .text-form {
-    margin-bottom: 10px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-
-    color: #FFFFFF;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+color: #FFFFFF;
+@media screen and (min-width: 360px) {
+margin-bottom: 12px;
+font-size: 14px;
+line-height: 16px;
+    }
+    
+@media screen and (min-width: 1110px){
+margin-bottom: 10px;
+font-size: 18px;
+line-height: 21px;
+        }
 }
 
 .visa-form__number {
-    padding: 9px 6px;
     background: #2C4D74;
-    border: 1px solid #000000;
-    max-width: 194px;
-    margin-bottom: 20px;
+        border: 1px solid #000000;
+        @media screen and (min-width: 360px) {
+        padding: 6px 9px 6px 9px;
+        max-width: 252px;
+        height: 27px;
+        margin-bottom: 18px;
+            }
+        
+            @media screen and (min-width: 1110px){
+    padding: 9px 6px;
+        max-width: 194px;
+        height: 32px;
+        margin-bottom: 20px;
+            }
 }
 
 .visa-form__number::placeholder {
@@ -110,11 +165,20 @@ font-family: 'Roboto';
 }
 
 .visa-form__date {
-    padding: 9px 6px;
     background: #2C4D74;
-    border: 1px solid #000000;
+        border: 1px solid #000000;
+    @media screen and (min-width: 360px) {
+     width: 76px;
+     height: 27px;
+        }
+    
+        @media screen and (min-width: 1110px){
+padding: 9px 6px;
+height: 32px;
     width: 67px;
-    // margin-bottom: 20px;
+        }
+    
+   
 }
 
 .visa-form__date::placeholder {
@@ -129,34 +193,81 @@ font-family: 'Roboto';
 }
 
 .master-visa {
-justify-content: space-evenly;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-    align-items: flex-start;
-    flex-direction: row-reverse;
+@media screen and (min-width: 360px) {
+    left: 150px;
+        bottom: 2px;
+        position: absolute;
+        display: flex;
+        align-content: stretch;
+        flex-direction: row-reverse;
+       
+    }
+
+    @media screen and (min-width: 1110px) {
+    left: 300px;
+        bottom: 150px;
+        position: absolute;
+        display: flex;
+     
+    }
+
 }
 
 .master {
-    width: 125px;
-    margin-right: 13px;
     display: block;
     background-color: #fff;
+    @media screen and (min-width: 360px) {
+        width: 66px;
+        padding: 6px 5px 7px 4px;
+        }
+    
+        @media screen and (min-width: 1110px){
+    width: 125px;
+    margin-right: 13px;
     padding: 18px;
+        }
+  
 }
 
 .visa {
-    width: 125px;
-    margin-right: 13px;
     display: block;
-    background-color: #fff;
-    padding: 28px 10px;
+        background-color: #fff;
+    @media screen and (min-width: 360px) {
+        width: 66px;
+        padding: 15px 5px;
+        margin-right: 12px;
+        }
+    
+        @media screen and (min-width: 1110px){
+        width: 125px;
+        margin-right: 13px;
+        padding: 28px 10px;
+        }
+
+}
+
+.checkbox-label {
+    @media screen and (min-width: 360px) {
+    display: none;
+    }
+    
+    @media screen and (min-width: 1110px) {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 30px;
+    bottom: 25px;
+    position: absolute;
+}
 }
 
 .checkbox-input:checked {
+    display: block;
     width: 50px;
     height: 50px;
-}
+    }
+
 
 .checkbox-input {
     /* -webkit-appearance: none;
@@ -198,14 +309,6 @@ justify-content: space-evenly;
     background-origin: border-box;
 }
 
-.checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    right: 30px;
-    bottom: 25px;
-    position: absolute;      
-}
 
 .checkbox-text {
     font-family: 'Roboto';
@@ -239,20 +342,34 @@ justify-content: space-evenly;
 
 
 .modal__logo{
-    margin-right: 55px;
-    display: block;  
+    @media screen and (min-width: 360px){
+        display: none;
+    }
+         @media screen and (min-width: 1110px){
+            margin-right: 55px;
+                display: block;
+         }
+    
 
 }
 
 .modal__logo-text{
-  
-    font-family: 'PT Serif';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 64px;
+    @media screen and (min-width: 360px){
+        display: none;
+    }
+        @media screen and (min-width: 1110px){
+font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 64px;
+
+    color: #FFFFFF;
+    display: block;
+        }
     
-        color: #FFFFFF;
+  
+  
 }
 
 .final-order{

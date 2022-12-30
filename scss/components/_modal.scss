@@ -26,15 +26,15 @@
         width: 100%;
         transform: translate(-50%, -50%);
         @media screen and (min-width: 360px) {
-background-image: url(../images/mobile/fl-desk3.png), url(../../images/mobile/fl-2-desk3.png), url(../../images/mobile/bg-desktop2.png);
+background-image: url(../images/mobile/fl-desk3.png), url(../images/mobile/fl-2-desk3.png), url(../images/mobile/bg-desktop2.png);
     background-repeat: no-repeat;
     background-position: bottom 0px left 0px, bottom 0px right 0px,center;
     background-size: 166px, 182px, cover;
     padding: 46px 27px;
-    min-height: 738px;
+    height: 738px;
         }
         @media screen and (min-width: 1110px) {
-            background-image: url(../images/desktop/flower-desktop.png), url(../../images/desktop/group5-desktop.png);
+            background-image: url(../images/desktop/flower-desktop.png), url(../images/desktop/group5-desktop.png);
                 background-repeat: no-repeat;
                 background-position: bottom 0px left 0px, center;
                 background-size: 355px, cover;
@@ -47,6 +47,16 @@ background-image: url(../images/mobile/fl-desk3.png), url(../../images/mobile/fl
                 justify-content: space-between;
         }
 
+}
+
+.blok-modal{
+    @media screen and (min-width: 360px) {
+      padding-top: 80px;
+        }
+    
+        @media screen and (min-width: 1110px){
+padding-top: 20px;
+        }
 }
 
 
@@ -195,7 +205,7 @@ height: 32px;
 
 .master-visa {
 @media screen and (min-width: 360px) {
-    left: 150px;
+    left: 140px;
         bottom: 2px;
         position: absolute;
         display: flex;
@@ -218,7 +228,7 @@ height: 32px;
     display: block;
     background-color: #fff;
     @media screen and (min-width: 360px) {
-        width: 66px;
+        max-width: 66px;
         padding: 6px 5px 7px 4px;
         }
     
@@ -234,7 +244,7 @@ height: 32px;
     display: block;
         background-color: #fff;
     @media screen and (min-width: 360px) {
-        width: 66px;
+        max-width: 66px;
         padding: 15px 5px;
         margin-right: 12px;
         }
@@ -402,10 +412,7 @@ margin-bottom: 28px;
     min-width: 580px;
     height: 50px;
     padding: 10px 108px 8px 22px;
-        }
-   
-  
-   
+        }  
 }
 
 .final-order__inpur::placeholder{
@@ -465,6 +472,7 @@ font-size: 24px;
 
 .button--form{   
 @media screen and (min-width: 360px) {
+margin-top: -15px;
 margin-left: 25px;
     }
 

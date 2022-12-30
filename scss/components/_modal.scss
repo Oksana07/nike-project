@@ -26,15 +26,15 @@
         width: 100%;
         transform: translate(-50%, -50%);
         @media screen and (min-width: 360px) {
-background-image: url(../../images/mobile/fl-desk3.png), url(../../images/mobile/fl-2-desk3.png), url(../../images/mobile/bg-desktop2.png);
+background-image: url(../images/mobile/fl-desk3.png), url(../../images/mobile/fl-2-desk3.png), url(../../images/mobile/bg-desktop2.png);
     background-repeat: no-repeat;
     background-position: bottom 0px left 0px, bottom 0px right 0px,center;
     background-size: 166px, 182px, cover;
     padding: 46px 27px;
-    max-height: 738px;
+    min-height: 738px;
         }
         @media screen and (min-width: 1110px) {
-            background-image: url(../../images/desktop/flower-desktop.png), url(../../images/desktop/group5-desktop.png);
+            background-image: url(../images/desktop/flower-desktop.png), url(../../images/desktop/group5-desktop.png);
                 background-repeat: no-repeat;
                 background-position: bottom 0px left 0px, center;
                 background-size: 355px, cover;
@@ -56,6 +56,7 @@ background-image: url(../../images/mobile/fl-desk3.png), url(../../images/mobile
     display: block;
     background: rgba(168, 168, 168, 0.26);
     @media screen and (min-width: 360px){
+        margin-bottom: 10px;
 padding-left: 10px;
    padding-right: 14px;
    padding-bottom: 12px;
@@ -302,7 +303,7 @@ height: 32px;
 .checkbox-input:checked+.checkbox-icon {
     transform: scale(1.2);
 
-    background-image: url(../../images/icon/full-check.svg);
+    background-image: url(../images/icon/full-check.svg);
     background-color: blue;
     border-color: blue;
     background-size: contain;
@@ -328,26 +329,31 @@ height: 32px;
 
 
 .title-form{
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 36px;
-        line-height: 42px;
-    
-        color: #FFFFFF;
-        margin-left: 366px;
-        margin-bottom: 11px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+color: #FFFFFF;
+@media screen and (min-width: 360px) {
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    }
+
+    @media screen and (min-width: 1110px){
+font-size: 36px;
+line-height: 42px;
+margin-left: 150px;
+margin-bottom: 11px;
+    }
 }
-
-
 
 .modal__logo{
     @media screen and (min-width: 360px){
         display: none;
     }
-         @media screen and (min-width: 1110px){
-            margin-right: 55px;
-                display: block;
+    @media screen and (min-width: 1110px){
+        margin-right: 55px;
+        display: block;
          }
     
 
@@ -367,60 +373,105 @@ font-family: 'PT Serif';
     color: #FFFFFF;
     display: block;
         }
-    
-  
-  
 }
 
 .final-order{
-    margin-left: 162px;
-
+    @media screen and (min-width: 360px) {
+    margin-left: 35px;
+        }
+    
+        @media screen and (min-width: 1110px){
+margin-left: 162px;
+        }   
 }
 
 .final-order__inpur{
-   
-    display: block;
-    margin-bottom: 28px;
+display: block;
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 50px;
+@media screen and (min-width: 360px) {
+min-width: 242px;
+height: 35px;
+padding: 7px 2px 10px 9px;
+margin-bottom: 15px;
+ }
+    
+@media screen and (min-width: 1110px){
+margin-bottom: 28px;
     min-width: 580px;
     height: 50px;
     padding: 10px 108px 8px 22px;
-    background: #FFFFFF;
-        border: 1px solid #000000;
-        border-radius: 50px;
+        }
+   
+  
+   
 }
 
 .final-order__inpur::placeholder{
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
-        font-size: 28px;
-        line-height: 33px;
-    
         color: #959595;
+@media screen and (min-width: 360px) {
+font-size: 18px;
+    line-height: 21px;
+        }
+    
+        @media screen and (min-width: 1110px){
+    font-size: 28px;
+    line-height: 33px;
+        }   
+        
 }
 
 .nike-form{
-    padding: 26px 7px 24px 8px;
+    border-radius: 10px;
     border: 1px solid #FFFFFF;
-        border-radius: 10px;
-        margin-left: 350px;
-        margin-bottom: 10px;
+    @media screen and (min-width: 360px) {
+    width: 117px;
+    padding: 14px 3px;
+    margin-left: 100px;
+    margin-bottom: 10px;
+        }
+    
+        @media screen and (min-width: 1110px){
+    width: 220px;
+    padding: 26px 7px 24px 8px;
+    margin-left: 350px;
+    margin-bottom: 10px;
+        }
+    
 }
 
 .nike-form__price{
     font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 33px;
+    font-style: normal;
+    font-weight: 400;
+    color: #FFFFFF;
     
-        color: #FFFFFF;
-        margin-left: 421px;
+@media screen and (min-width: 360px) {
+font-size: 24px;
+    line-height: 28px;
+    margin-left: 130px;
+    }
+
+    @media screen and (min-width: 1110px){
+    margin-left: 421px;
+    font-size: 28px;
+        line-height: 33px;
+    }
 }
 
-.button--form{
+.button--form{   
+@media screen and (min-width: 360px) {
+margin-left: 25px;
+    }
+
+    @media screen and (min-width: 1110px){
+margin-left: 325px;
+    }
    
-    margin-left: 325px;
 }
 
 

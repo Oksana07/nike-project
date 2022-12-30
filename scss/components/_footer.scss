@@ -7,15 +7,11 @@
     @media screen and (min-width: 1110px) {
          padding-top: 45px;
         padding-bottom: 50px;
-        // height: 292px;
-        
-    
     }
 }
 
 .footer-container1{
-    
-    @media screen and (min-width: 360px){
+@media screen and (min-width: 360px){
         padding-top: 10px;
         margin-bottom: 12px;
         border-bottom: 1px solid #5E5E5E;
@@ -33,7 +29,6 @@ display: flex;
 }
 
 .footer-container2 {
-    
     @media screen and (min-width: 360px) {
             display: flex;
         }
@@ -54,8 +49,7 @@ font-size: 14px;
         @media screen and (min-width: 1110px) {
     font-size: 24px;
         line-height: 28px;
-        }
-   
+        } 
 }
 
 .footer-email{
@@ -66,7 +60,7 @@ font-size: 14px;
     flex-direction: row-reverse;
     align-items: center;
     }
-         @media screen and (min-width: 1110px){
+    @media screen and (min-width: 1110px){
 margin-left: auto;
          }
 }
@@ -79,19 +73,18 @@ margin-bottom: 10px;
 margin-bottom: 10px;
 }
 .footer-email__link{
-    
-    font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        text-decoration-line: underline;
-        color: #FFFFFF;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+text-decoration-line: underline;
+color: #FFFFFF;
 @media screen and (min-width: 360px){
 font-size: 14px;
     line-height: 16px
 }
 @media screen and (min-width: 1110px){
 font-size: 24px;
-    line-height: 28px;
+line-height: 28px;
 }        
 }
 
@@ -122,10 +115,8 @@ margin-top: 12px;
  @media screen and (min-width: 1110px){
 font-size: 18px;
     line-height: 21px;
- }
-   
+ }   
 }
-
 
 .footer_logo{
     display: block;

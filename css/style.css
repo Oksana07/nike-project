@@ -1170,6 +1170,7 @@ body {
     background-size: 355px, cover;
     border-radius: 4px;
     padding: 40px;
+    max-width: 1440px;
     min-height: 1024px;
     display: flex;
     justify-content: space-between;
@@ -1349,7 +1350,7 @@ body {
 }
 @media screen and (min-width: 1110px) {
   .master-visa {
-    left: 300px;
+    left: 280px;
     bottom: 150px;
     position: absolute;
     display: flex;
@@ -1368,7 +1369,7 @@ body {
 }
 @media screen and (min-width: 1110px) {
   .master {
-    width: 125px;
+    max-width: 125px;
     margin-right: 13px;
     padding: 18px;
   }
@@ -1387,7 +1388,7 @@ body {
 }
 @media screen and (min-width: 1110px) {
   .visa {
-    width: 125px;
+    max-width: 125px;
     margin-right: 13px;
     padding: 28px 10px;
   }

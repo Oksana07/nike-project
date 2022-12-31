@@ -1,28 +1,50 @@
 .application {
-    padding-top: 55px;
-    padding-bottom: 80px;
-    // max-width: 1440px;
-    min-height: 510px;
-    margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    display: block;
-    background-image: url(../images/desktop/group-4-desktop.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+        text-align: center;
+        display: block;
+    @media screen and (min-width: 360px) {
+        background-image: url(../images/mobile/fl-r-application-mobile.png),url(../images/mobile/fl-left-application-mibile.png),url(../images/mobile/bg-application-mobile.png);
+            background-repeat:no-repeat;
+            background-position:bottom 0px right 0px,
+                bottom 0px left 0px, center;
+            background-size:64px, 63px, cover;
+            padding-bottom: 44px;
+                padding-top: 9px;
+        }
+    
+        @media screen and (min-width: 1110px) {
+            padding-top: 55px;
+                padding-bottom: 80px;
+                min-height: 510px;
+            background-image: url(../images/desktop/group-4-desktop.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+        }
 }
 
+
 .application_title{
-font-family: 'Playfair Display';
+    font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        text-align: center;
+        color: var(--text-color);
+@media screen and (min-width: 360px) {
+font-size: 36px;
+    line-height: 48px;
+    }
+
+    @media screen and (min-width: 1110px) {
 font-size: 48px;
-line-height: 1.33;
-text-align: center;
-color: var(--text-color);
+    line-height: 1.33;
+    }
 }
 
 .application__form {
-    display:inline-block;
+   
+            display: inline-block;
+        
 
 }
 
@@ -33,24 +55,39 @@ color: var(--text-color);
 }
 
 .form-input {
-height: 60px;
-    background: #fff;
-    border-radius: 50px;
-    width: 690px;
-    margin: 0;
-    padding: 10px 20px;
-    padding-left: 40px;
     font: inherit;
-    border: 1px solid #2a2a2a;
+        border: 1px solid #2a2a2a;
+        background: #fff;
+            border-radius: 50px;
+    @media screen and (min-width: 360px) {
+           width: 242px;
+           height: 35px;
+           margin-bottom: 20px;
+        }
+    
+        @media screen and (min-width: 1110px) {
+            height: 60px;
+            width: 690px;
+            margin: 0;
+            padding: 10px 20px;
+            padding-left: 40px;
+        }
+   
 }
 
 .button-confirm {
-    width: 250px;
+    @media screen and (min-width: 360px) {
+            display: none;
+        }
+    
+        @media screen and (min-width: 1110px) {
+           display: block;
+        width: 250px;
         max-height: 50px;
         padding-left: 17px;
         padding-right: 17px;
         top: 10px;
-        right: 10px;
+        right: 220px;
         position: absolute;
         font-family: "Roboto";
         font-style: normal;
@@ -61,38 +98,61 @@ height: 60px;
         opacity: .5;
         border: 1px solid #000;
         border-radius: 50px;
+    }
 }
 
-.blok-application{
-   display: inline-grid; 
-}
+// .blok-application{
+//    display: inline-grid; 
+// }
    
   .blok-application__input{
-    padding-left: 24px;
-    margin-bottom: 20px;
-width: 560px;
-height: 50px;
 background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 50px;
+@media screen and (min-width: 360px) {
+width: 242px;
+    height: 35px;
+    margin-bottom: 33px;
+    }
+
+    @media screen and (min-width: 1110px) {
+            padding-left: 24px;
+            margin-bottom: 20px;
+            width: 560px;
+            height: 50px;
+    }
+
+
   }
 
 
 .application-button{
-margin-left: 200px;
- padding: 20px 61px;
-display: block;
-border: none;
- border-radius: 10px;
-font-size: 24px;
-line-height: 1.16;
-background-color: var(--hero-button-color);
-color: var(--text-color);
-color: var(--text-color);
-cursor: pointer;
+    padding: 20px 61px;
+    display: block;
+    border: none;
+    border-radius: 10px;
     
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: var(--hero-button-color);
+    color: var(--text-color);
+    color: var(--text-color);
+    cursor: pointer;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 360px) {
+   padding: 11px 30px;
+  display: inline-flex;
+    font-size: 24px;
+        line-height: 28px;
+    }
+
+    @media screen and (min-width: 1110px) {
+        padding: 20px 49px;
+        font-size: 24px;
+        line-height: 1.16;
+
+}
+
     
 &:hover,
 &:focus {

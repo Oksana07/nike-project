@@ -874,7 +874,7 @@ body {
 .application {
   padding-top: 55px;
   padding-bottom: 80px;
-  height: 510px;
+  min-height: 510px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -895,9 +895,6 @@ body {
 
 .application__form {
   display: inline-block;
-  padding: 20px;
-  margin: 20px;
-  width: 600px;
 }
 
 .form-field {
@@ -906,41 +903,58 @@ body {
   margin-bottom: 20px;
 }
 
-.form-label {
-  position: absolute;
-  top: 50%;
-  left: 40px;
-  transform: translateY(-50%);
-  transition: transform 250ms linear;
-}
-
 .form-input {
-  width: 100%;
+  height: 60px;
+  background: #fff;
+  border-radius: 50px;
+  width: 690px;
   margin: 0;
   padding: 10px 20px;
   padding-left: 40px;
   font: inherit;
-  border-radius: 3px;
   border: 1px solid #2a2a2a;
 }
 
-.form-field:focus-within {
-  background-color: blue;
+.button-confirm {
+  width: 250px;
+  max-height: 50px;
+  padding-left: 17px;
+  padding-right: 17px;
+  padding: 18px 9x;
+  top: 10px;
+  right: 10px;
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  color: #8d8d8d;
+  opacity: 0.5;
+  border: 1px solid #000;
+  border-radius: 50px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.form-field:focus-within > .form-label,
-.form-input:not(:placeholder-shown) + .form-label {
-  transform: translateY(-50px);
+.blok-application {
+  display: inline-grid;
 }
 
-.form--button {
-  display: inline-block;
+.blok-application__input {
+  padding-left: 24px;
+  margin-bottom: 20px;
+  width: 560px;
+  height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 50px;
 }
 
 .application-button {
-  margin-left: 150px;
+  margin-left: 200px;
   padding: 20px 61px;
   display: block;
+  border: none;
   border-radius: 10px;
   font-size: 24px;
   line-height: 1.16;

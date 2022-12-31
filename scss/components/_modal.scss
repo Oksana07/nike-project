@@ -21,11 +21,11 @@
 
 .modal {
     position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%);
-        @media screen and (min-width: 360px) {
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    @media screen and (min-width: 360px) {
 background-image: url(../images/mobile/fl-desk3.png), url(../images/mobile/fl-2-desk3.png), url(../images/mobile/bg-desktop2.png);
     background-repeat: no-repeat;
     background-position: bottom 0px left 0px, bottom 0px right 0px,center;
@@ -33,28 +33,27 @@ background-image: url(../images/mobile/fl-desk3.png), url(../images/mobile/fl-2-
     padding: 46px 27px;
     height: 738px;
         }
-        @media screen and (min-width: 1110px) {
-            background-image: url(../images/desktop/flower-desktop.png), url(../images/desktop/group5-desktop.png);
-                background-repeat: no-repeat;
-                background-position: bottom 0px left 0px, center;
-                background-size: 355px, cover;
-                border-radius: 4px;
-                padding: 40px;
-            
-                max-width: 1440px;
-                min-height: 1024px;
-                display: flex;
-                justify-content: space-between;
+    @media screen and (min-width: 1110px) {
+    background-image: url(../images/desktop/flower-desktop.png), url(../images/desktop/group5-desktop.png);
+    background-repeat: no-repeat;
+    background-position: bottom 0px left 0px, center;
+    background-size: 355px, cover;
+    border-radius: 4px;
+    padding: 40px;      
+    max-width: 1440px;
+    min-height: 1024px;
+    display: flex;
+    justify-content: space-between;
         }
 
 }
 
 .blok-modal{
-    @media screen and (min-width: 360px) {
+@media screen and (min-width: 360px) {
       padding-top: 80px;
         }
     
-        @media screen and (min-width: 1110px){
+@media screen and (min-width: 1110px){
 padding-top: 20px;
         }
 }
@@ -66,10 +65,10 @@ padding-top: 20px;
     display: block;
     background: rgba(168, 168, 168, 0.26);
     @media screen and (min-width: 360px){
-        margin-bottom: 10px;
-padding-left: 10px;
-   padding-right: 14px;
-   padding-bottom: 12px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 14px;
+    padding-bottom: 12px;
     width: 305px;
     }
 
@@ -77,11 +76,8 @@ padding-left: 10px;
     margin-left: 167px;
     margin-top: 100px;
     margin-bottom: 25px;
-    width: 575px;
-    
-    }
-    
-    
+    width: 575px;  
+    }  
 }
 
 .modal-title{

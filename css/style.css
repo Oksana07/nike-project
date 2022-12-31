@@ -978,6 +978,10 @@ body {
   }
 }
 
+.blok-application {
+  display: inline;
+}
+
 .blok-application__input {
   background: #FFFFFF;
   border: 1px solid #000000;

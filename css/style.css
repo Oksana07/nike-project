@@ -920,7 +920,6 @@ body {
   max-height: 50px;
   padding-left: 17px;
   padding-right: 17px;
-  padding: 18px 9x;
   top: 10px;
   right: 10px;
   position: absolute;
@@ -933,7 +932,6 @@ body {
   opacity: 0.5;
   border: 1px solid #000;
   border-radius: 50px;
-  transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
 .blok-application {

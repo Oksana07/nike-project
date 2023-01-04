@@ -918,8 +918,17 @@ body {
   }
 }
 
-.application__form {
-  display: inline-block;
+@media screen and (min-width: 360px) and (min-width: 1110px) {
+  .application__form {
+    margin-left: 200px;
+    display: table-caption;
+  }
+}
+@media screen and (min-width: 1110px) and (min-width: 1440px) {
+  .application__form {
+    margin-left: 350px;
+    display: table-caption;
+  }
 }
 
 .form-field {

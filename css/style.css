@@ -1745,7 +1745,7 @@ body {
   .form {
     background-image: url(../../images/mobile/nike-form-mobile.png), url(../../images/mobile/bg-form-mobile.png);
     background-repeat: no-repeat;
-    background-position: bottom 490px center, center;
+    background-position: top 490px center, center;
     background-size: 306px, cover;
     min-height: 738px;
   }

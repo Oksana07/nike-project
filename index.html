@@ -137,7 +137,18 @@
                         <p class="echoes__time">25.11</p>
                         <div class="echoes__blok">
                             <div class="echoes__blok1">
-                                <img src="./images/desktop/ellipse1-desktop.png" alt="">
+                                <picture>
+                                    <source
+                                        srcset="./images/desktop/user1-desktop.jpg 1x, ./images/desktop/user1-desktop@2x.jpg 2x"
+                                        type="image/jpeg" media="(max-width: 1110px)" />
+                                    <source
+                                        srcset="./images/mobile/user1-mobile.jpg 1x, ./images/mobile/user1-mobile@2x.jpg 2x"
+                                        type="image/jpeg" media="(max-width: 360px)" />
+                                    <img class="echoes-user" src="./images/desktop/user1-desktop.jpg" alt=""
+                                        width="31px">
+                                </picture>
+
+
                             </div>
                             <div class="echoes__blok2">
                                 <h3 class="echoes__name">John Teylor</h3>
@@ -317,13 +328,15 @@
         <!-- form -->
         <div class="backdrop-form is-hiddenForm" data-form>
             <div class="form">
-                <a class="hero__logo" href="">
+                <a class="form__logo" href="">
                     <img src="./images/desktop/logo-big-desktop.png" alt="">
 
                 </a>
-                <p class="hero__logo-text">С&R</p>
+                <p class="form__logo-text">С&R</p>
+                <h1 class="form__title">Thank you for purchasing
+                    the sneakers of your dreams.</h1>
 
-                <button type="submit" class="button" data-form-close>
+                <button type="submit" class="button button--desktop2" data-form-close>
                     Back to main page
                 </button>
 

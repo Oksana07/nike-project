@@ -20,21 +20,105 @@
 }
 
 .form {
-
-    background-image: url(../images/modal-form.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    border-radius: 4px;
-    padding: 40px;
-
-
-    position: absolute;
+position: absolute;
     top: 50%;
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
+    border-radius: 4px;
+   
+@media screen and (min-width: 360px) {
+background-image: url(../../images/mobile/nike-form-mobile.png),url(../../images/mobile/bg-form-mobile.png);
+background-repeat: no-repeat;
+background-position: bottom 490px center, center;
+background-size: 306px, cover;
+min-height: 738px;
+
+}
+        
+@media screen and (min-width: 1110px) {
+    background-image: url(../../images/desktop/fl-r2-desktop2.png), url(../../images/desktop/fl-r-desktop2.png), url(../../images/desktop/fl-l-desktop2.png), url(../../images/desktop/fl-l2-desktop2.png), url(../../images/desktop/nike-desktop2.png), url(../images/modal-form.png);
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0px, right 0px top 200px, bottom 0px left 0px, top 50px left 0px, top 490px center, center;
+    background-size: 615px, 260px, 480px, 280px, 855px, cover;
+    
+    padding: 40px;
     max-width: 1440px;
     min-height: 1024px;
+     }
+}
 
+.form__logo {
+    display: block;
+    @media screen and (min-width: 360px) {
+    width: 96px;
+    margin-top: 110px;
+    margin-left: 240px;
+    }
+
+    @media screen and (min-width: 1110px) {
+        margin-top: 10px;
+        width: 158px;
+        margin-left: 1122px;
+        
+    }
+
+
+}
+
+.form__logo-text {
+    font-family: 'PT Serif';
+    font-style: normal;
+    color: #FFFFFF;
+    display: block;
+    @media screen and (min-width: 360px) {
+    margin-left: 245px;
+    font-size: 24px;
+    line-height: 32px;
+     
+    }
+
+    @media screen and (min-width: 1110px) {
+        margin-left: 1122px;  
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 64px;
+
+       
+    }
+}
+
+.form__title{
+font-family: 'PT Serif';
+font-style: normal;
+font-weight: 400;
+text-align: center;
+color: #FFFFFF;
+@media screen and (min-width: 360px) {
+font-size: 36px;
+line-height: 48px;
+}
+        
+@media screen and (min-width: 1110px) {
+width: 610px;
+margin-left: 415px;
+font-size: 48px;
+line-height: 64px;
+ }
+}
+
+
+.button--desktop2{
+@media screen and (min-width: 360px) {
+font-size: 24px;
+line-height: 28px;
+padding: 10px 28px;
+ }
+    
+@media screen and (min-width: 1110px) {
+    margin-left: 593px;
+    padding: 20px 28px;
+
+ }
+   
 }

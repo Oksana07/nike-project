@@ -28,7 +28,7 @@ position: absolute;
     border-radius: 4px;
    
 @media screen and (min-width: 360px) {
-background-image: url(../../images/mobile/nike-form-mobile.png),url(../../images/mobile/bg-form-mobile.png);
+background-image: url(../images/mobile/nike-form-mobile.png),url(../images/mobile/bg-form-mobile.png);
 background-repeat: no-repeat;
 background-position: top 490px center, center;
 background-size: 306px, cover;
@@ -37,7 +37,7 @@ min-height: 738px;
 }
         
 @media screen and (min-width: 1110px) {
-    background-image: url(../../images/desktop/fl-r2-desktop2.png), url(../../images/desktop/fl-r-desktop2.png), url(../../images/desktop/fl-l-desktop2.png), url(../../images/desktop/fl-l2-desktop2.png), url(../../images/desktop/nike-desktop2.png), url(../images/modal-form.png);
+    background-image: url(../images/desktop/fl-r2-desktop2.png), url(../images/desktop/fl-r-desktop2.png), url(../images/desktop/fl-l-desktop2.png), url(../images/desktop/fl-l2-desktop2.png), url(../images/desktop/nike-desktop2.png), url(../images/modal-form.png);
     background-repeat: no-repeat;
     background-position: right 0px bottom 0px, right 0px top 200px, bottom 0px left 0px, top 50px left 0px, top 490px center, center;
     background-size: 615px, 260px, 480px, 280px, 855px, cover;
